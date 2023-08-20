@@ -1,0 +1,512 @@
+@include breakpoint('M') {
+    .tmpl_hh_wrapper {
+        // max-width: map-get($wrapperWidth, 'M');
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .tmpl_hh_header{
+        padding: 17px 40px 0;
+        &__logo {
+            width: 160px;
+        }
+        .tmpl_hh_link{
+            right: 50px;
+            bottom: 10px;
+        }
+    }
+    .tmpl_hh_intro{
+        margin-top: 90px;
+        height: 343px;
+    }
+    .tmpl_hh_title{
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .tmpl_hh_about{
+        &__top {
+            padding: 64px 40px 80px;
+            b{
+                font-size: 22px;
+                line-height: 32px;
+            }
+        }
+        &__middle{
+            .tmpl_hh_img{
+                height: 380px;
+            }
+            .tmpl_hh_text {
+                padding-right: 40px;
+            }
+        }
+        &__bottom{
+            padding: 70px 12.4% 56px;
+            img {
+                height: 40px;
+            }
+        }
+    }
+    .tmpl_hh_slider {
+        .tmpl_hh_arrow{
+            left: 30px;
+        }
+        .tmpl_hh_next{
+            left: auto;
+            right: 30px;
+        }
+    }
+    .tmpl_hh_benefits{
+        padding: 100px 40px 0;
+        img {
+            height: 100px;
+        }
+        p{
+            font-size: 16px;
+            line-height: 22px;
+        }
+        .tmpl_hh_item{
+            width: 19.4%;
+        }
+        .tmpl_hh_flex{
+            margin-left: -20px;
+            width: calc(100% + 40px);
+        }
+    }
+    .tmpl_hh_kulture {
+        padding: 88px 0 25px 40px;
+        .tmpl_hh_title--2 {
+            width: 85%;
+        }
+        &__top{
+            b{
+                font-size: 24px;
+                line-height: 32px;
+            }
+            .tmpl_hh_text {
+                width: 49.7%;
+            }
+            .tmpl_hh_item{
+                padding-bottom: 21px;
+                margin-bottom: 10px;
+            }
+            .tmpl_hh_img{
+                height: 570px;
+                width: 45.5%;
+            }
+        }
+        &__bottom{
+            b{
+                font-size: 22px;
+                line-height: 32px;
+            }
+        }
+    }
+    .tmpl_hh_video__content:before{
+        width: 120px;
+        height: 120px;
+        top: calc(50% - 60px);
+    }
+    .tmpl_hh_footer{
+        padding: 48px 40px 46px;
+    }
+}
+
+@include breakpoint('S') {
+    .tmpl_hh_wrapper {
+        // max-width: map-get($wrapperWidth, 'S');
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .tmpl_hh_header {
+        padding: 17px 18px 0;
+        &__slogan{
+            position: relative;
+            left: 0;
+            width: 88%;
+            margin-top: 40px;
+        }
+        .tmpl_hh_link{
+            top: 38px;
+            bottom: auto;
+        }
+    }
+    .tmpl_hh_intro {
+        margin-top: 50px;
+        height: 280px;
+        .tmpl_hh_btn{
+            width: 100px;
+            height: 100px;
+            font-size: 13px;
+            line-height: 15px;
+            top: calc(50% - 50px);
+            left: 20px;
+            &:before{
+                top: 19px;
+                width: 1px;
+            }
+            &:after{
+                bottom: 16px;
+            }
+            &:hover{
+                &:after{
+                    bottom: 14px;
+                }
+            }
+        }
+    }
+    .tmpl_hh_title {
+        font-size: 28px;
+        line-height: 34px;
+    }
+    .tmpl_hh_about{
+        &__top {
+            padding: 40px 22px 40px;
+            b {
+                font-size: 18px;
+                line-height: 24px;
+                width: 91%;
+            }
+            span:before{
+                height: 19px;
+            }
+            sup{
+                font-size: 12px;
+            }
+        }
+        &__middle{
+            &:before{
+                top: 200px;
+                width: 314px;
+            }
+            .tmpl_hh_img{
+                height: 490px;
+                width: 100%;
+            }
+            .tmpl_hh_text{
+                width: 100%;
+                padding: 32px 18px 0;
+            }
+        }
+        &__bottom{
+            margin-top: 32px;
+            padding: 48px 30px 46px;
+            p{
+                font-size: 14px;
+            }
+            img{
+                height: 36px;
+            }
+        }
+    }
+    .tmpl_hh_slider {
+        margin-top: 48px;
+        .tmpl_hh_arrow {
+            top: calc(50% - 18px);
+            width: 36px;
+            height: 36px;
+            background-color: rgba(19, 168, 158, 0.5);
+            background-size: 58px;
+        }
+    }
+    .tmpl_hh_benefits{
+        background-size: cover;
+        background-position: top center;
+        padding: 48px 20px 0;
+        position: relative;
+        &:after{
+            content: '';
+            position: absolute;
+            bottom: -28px;
+            left: 0;
+            width: 100%;
+            height: 170px;
+            background: linear-gradient(0deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+            pointer-events: none;
+        }
+        .tmpl_hh_title {
+            margin-bottom: 28px;
+        }
+        img {
+            width: auto;
+            height: 56px;
+            margin: 0 20px 0 0;
+        }
+        .tmpl_hh_flex {
+            margin-left: 0;
+            width: 100%;
+        }
+        .tmpl_hh_item{
+            z-index: 2;
+            width: 46.4%;
+            margin-bottom: 26px;
+            display: flex;
+            justify-content: flex-start;
+            text-align: left;
+            align-items: center;
+        }
+    }
+    .tmpl_hh_kulture {
+        padding: 48px 20px 25px 20px;
+        position: relative;
+        z-index: 2;
+        .tmpl_hh_title {
+            margin-bottom: 28px;
+        }
+        .tmpl_hh_text {
+            width: 100%;
+        }
+        .tmpl_hh_img{
+            width: 100%;
+        }
+        &__top{
+            b{
+                font-size: 18px;
+                line-height: 24px;
+            }
+            .tmpl_hh_item{
+                padding-bottom: 16px;
+                margin-bottom: 0;
+            }
+            br{
+                display: none;
+            }
+            .tmpl_hh_img{
+                height: 0;
+                padding-bottom: 83%;
+                background-image: url(https://hhcdn.ru/ichameleon/303656.jpg) !important;
+                background-size: 100%;
+            }
+        }
+        &__bottom{
+            b {
+                font-size: 18px;
+                line-height: 24px;
+                width: 100%;
+                margin-bottom: 32px;
+            }
+            span:before {
+                height: 19px;
+                left: -2px;
+                width: calc(100% + 6px);
+            }
+        }
+    }
+    .tmpl_hh_video__content:before {
+        width: 86px;
+        height: 86px;
+        top: calc(50% - 43px);
+        left: 45px;
+    }
+    .tmpl_hh_footer{
+        padding: 28px 18px 28px;
+    }
+}
+
+@include breakpoint('XS') {
+    .tmpl_hh_wrapper{
+        margin-left: -5px;
+        width: calc(100% + 10px);
+    }
+    .tmpl_hh_header{
+        padding: 0 18px 0;
+        &__logo {
+            width: 93px;
+        }
+        .tmpl_hh_link{
+            font-size: 12px;
+            line-height: 14px;
+            top: 13px;
+            right: 18px;
+            &:before{
+                height: 2px;
+                bottom: -4px;
+            }
+            img{
+                width: 12px;
+                top: -12px;
+                right: -1px;
+            }
+            span{
+                font-size: 8px;
+                line-height: 9px;
+                top: -14px;
+                right: -17px;
+            }
+        }
+        &__slogan{
+            width: 100%;
+        }
+    }
+    .tmpl_hh_intro {
+        margin-top: 33px;
+        height: 136px;
+        background-size: cover;
+        .tmpl_hh_btn{
+            width: 72px;
+            height: 72px;
+            font-size: 10px;
+            line-height: 12px;
+            top: calc(50% - 36px);
+            left: 18px;
+            &:before{
+                width: 1px;
+                height: 12px;
+                top: 15px;
+            }
+            &:after{
+                width: 11px;
+                bottom: 8px;
+            }
+            &:hover{
+                &:after{
+                    bottom: 6px;
+                }
+            }
+        }
+    }
+    .tmpl_hh_about{
+        &__top{
+            b{
+                width: 100%;
+            }
+            span:before {
+                height: 22px;
+                bottom: 1px;
+            }
+        }
+        &__middle{
+            &:before {
+                top: 41%;
+                width: 261px;
+            }
+            .tmpl_hh_img{
+                height: 0;
+                padding-bottom: 82%;
+            }
+            .tmpl_hh_text{
+                padding-top: 35px;
+            }
+        }
+        &__bottom{
+            margin-top: 22px;
+            padding: 48px 18px 8px;
+            img{
+                height: 39px;
+                margin-bottom: 12px;
+            }
+            br{
+                display: none;
+            }
+            .tmpl_hh_item{
+                width: 100%;
+                margin-bottom: 40px;
+            }
+        }
+    }
+    .tmpl_hh_title{
+        margin-bottom: 16px;
+    }
+    .tmpl_hh_slider{
+        img{
+            width: 128%;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .swiper-slide{
+            overflow: hidden;
+        }
+        .tmpl_hh_arrow{
+            left: 18px;
+            background-size: 38px;
+        }
+        .tmpl_hh_next{
+            left: auto;
+            right: 18px;
+        }
+        .tmpl_hh_pag{
+            bottom: 13px;
+            span{
+                width: 8px;
+                height: 8px;
+                margin: 0 10px;
+            }
+        } 
+    }
+    .tmpl_hh_benefits{
+        padding: 50px 18px 30px;
+        background-image: url(https://hhcdn.ru/ichameleon/303657.jpg);
+        background-size: 100%;
+        background-position: top -33px center;
+        .tmpl_hh_item {
+            width: 100%;
+            margin-bottom: 16px;
+        }
+        p {
+            font-size: 14px;
+            line-height: 18px;
+        }
+        .tmpl_hh_item--3{
+            p{
+                max-width: 100px;
+            }
+        }
+        .tmpl_hh_item--5{
+            p{
+                max-width: 100px;
+            }
+        }
+    }
+    .tmpl_hh_kulture{
+        padding: 2px 0 14px 0;
+        .tmpl_hh_title--1 {
+            margin-bottom: 12px;
+            padding: 0 18px;
+        }
+        .tmpl_hh_title--2 {
+            width: 100%;
+        }
+        &__top{
+            .tmpl_hh_text{
+                padding: 0 18px;
+            }
+            .tmpl_hh_item{
+                padding-bottom: 14px;
+            }
+            .tmpl_hh_item:nth-of-type(2){
+                p{
+                    width: 98%;
+                }
+            }
+            .tmpl_hh_img{
+                position: relative;
+                margin-top: 19px;
+            }
+        }
+        
+        &__bottom{
+            padding: 7px 22px;
+            .tmpl_hh_title{
+                font-size: 26px;
+                line-height: 30px;
+                margin-left: -4px;
+            }
+            span:before {
+                height: 22px;
+                bottom: 1px;
+            }
+            b{
+                width: 98%;
+            }
+        }
+    }
+    .tmpl_hh_video__content:before{
+        width: 56px;
+        height: 56px;
+        left: 18px;
+        top: calc(50% - 28px);
+    }
+    .tmpl_hh_footer span{
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
